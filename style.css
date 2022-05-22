@@ -37,10 +37,15 @@ body {
 }
 
 /* Add styles here! */
+p {
+  line-height: 1.5;
+}
+
 .max-width-wrapper {
-  max-width: 640px;
+  max-width: 800px;
   margin-inline: auto;
   padding-block: var(--spacing-7);
+  padding-inline: 16px;
 }
 
 header {
@@ -55,17 +60,14 @@ main h2 {
   margin-top: 0;
 }
 
-.intro-chunk {
-  padding: var(--spacing-2);
-}
-
 .intro-chunk .title {
   margin-bottom: var(--spacing-5);
 }
 
 .intro-chunk p {
-  max-width: 320px;
+  max-width: 360px;
   margin-bottom: var(--spacing-2);
+  font-size: var(--text-md);
 }
 
 .intro-chunk p strong {
@@ -75,11 +77,16 @@ main h2 {
 .card {
   background-color: var(--white);
   padding: var(--spacing-2);
+  margin: -16px;
   border-bottom: var(--spacing-1) solid var(--gray-700);
 }
 
 .card p {
   margin-bottom: var(--spacing-2);
+}
+
+.card p:last-child {
+  margin-bottom: 0;
 }
 
 .card .indented-heading {
